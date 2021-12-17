@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>A List of All Available Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="header_home">A List of All Reviews</h1>
+</header>
+
+<div class="container_home">
+    <section class="review_link">
+        <ul th:each="review: ${reviewsModel}">
+            <li><a  class="reviews_link" th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+        </ul>
+    </section>
+
+</div>
+
+<footer class="footer_home">
+    <small>&copy wcci 2020</small>
+</footer>
+
+</body>
+</html>

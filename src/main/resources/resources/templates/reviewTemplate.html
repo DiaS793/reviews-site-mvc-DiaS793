@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title th:text="${reviewModel.title}">A Review</title>
+</head>
+
+<body>
+ <div class="container">
+   
+     <header class="header">
+      
+        <h1 id="title" th:text="${reviewModel.title}"></h1>
+        <nav><a href="/reviews">Back</a></nav>
+     </header>
+
+     <section class="review" >
+         <figure>
+         <img th:src="${reviewModel.image_url}" alt="">
+         <h5 class="citation" th:text="${reviewModel.sources}"></h5>
+        </figure>
+        <article class="review_content">
+            <h3>Description</h3>
+            <p th:text="${reviewModel.description}"></p>
+
+             <h3>Review</h3>
+             <p th:text="${reviewModel.content}"></p>
+             <p th:text="${reviewModel.dateOfReview}"></p>
+        </article>
+     </section>
+     
+
+     <footer class="footer">
+         <small class="footer_copyright">&copy dds 2021</small>
+
+     </footer>
+    </div>
+
+ <p class="background_credit"> Background Photo by Jr Korpa on Unsplash </p>
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    max-width:100%;
+    filter: none;
+    background-repeat: none;
+    background-size: cover;
+}
+
+
+html{
+    color:white;
+    font: 18px/1.618 sans-serif;
+
+}
+
+.background_credit{
+    color:white;
+
+    margin-top: 10rem;
+    margin-left: 3rem;
+    font: 13px/1.618 sans-serif;
+}
+
+a{
+    color: black;
+    padding: .25rem 5rem;
+    text-decoration: none;
+}
+.container{
+    background-image: url("background.jpg");
+    background-size: cover;
+    max-width:100%;
+   
+    margin: 2rem auto;
+    max-width: 80rem;
+    width:100%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53);
+   
+}
+
+.container_home{
+    background-image: url("background.jpg");
+    background-size: cover;
+    max-width:100%;
+   
+    margin: 2rem auto;
+    max-width: 80rem;
+    width:100%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53);
+    list-style: none;
+}
+
+/* .home{
+    display: flex;
+    align-items: center;
+} */
+
+.review_link{
+    background-image: url("background.jpg");
+    background-size: cover;
+    max-width:100%;
+   
+    margin: 2rem auto;
+    max-width: 80rem;
+    width:100%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.53);
+    list-style: none;
+    text-align: center;
+    color:black;
+
+}
+
+section{
+    list-style: none;
+}
+
+.reviews_link{
+    color: black;
+    text-decoration: none;
+    text:bold;
+    list-style: none;
+}
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header{
+    margin-right: 1rem;
+    font-style: bold;
+}
+
+h1{
+    background-color: plum;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: .25rem;
+}
+
+.header_home{
+    background-color: plum;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: .25rem;
+    text-align: center;
+}
+
+nav{
+    background-color: #e53570;
+    border: 1px solid white;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+    column-gap: none;
+}
+
+.review img{
+    max-width:70%;
+    height:auto;
+    border-radius: 1rem;
+    opacity: 100%;  
+    margin-top:0.5rem;
+    margin-right: 0rem;
+    margin-left: 3rem;
+}
+.citation{
+    margin-left: 3rem;
+}
+
+h3{
+    background-color: #891590;
+    border: 1px solid white;
+    text-align:center;
+    border-radius: 1rem;
+    opacity: 80%;
+}
+
+.review_content{
+    margin-top: 2rem;
+    margin-right: 12rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_home{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.review{
+    margin-left:0rem;
+}
+
