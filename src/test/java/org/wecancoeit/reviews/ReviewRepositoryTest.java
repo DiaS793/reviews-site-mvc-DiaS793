@@ -2,31 +2,21 @@ package org.wecancoeit.reviews;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Collection;
-
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReviewRepositoryTest {
 
-    private ReviewRepository underTest;
-    private Review reviewOne = new Review(1L, "Haikyu!!!", "image url", "Anime", "content", "date", "description","citation");
-    private Review reviewTwo = new Review(2L, "Demon Slayer", "image url", "Anime", "content", "date", "description","citation");
-    private Review reviewThree = new Review(3L, "Seen Deadly Sins", "image url", "Anime", "content", "date", "description","citation");
-    private Review reviewFour = new Review(4L, "SailorMoon", "image url", "Anime", "content", "date", "description","citation");
+    //building database
 
     @Test
-    public void shouldFindCReviewOne() {
-        underTest = new ReviewRepository(reviewOne);
-        Review foundReview = underTest.findOne(1L);
-        assertEquals(reviewOne, foundReview);
-    }
+    public void shouldFindReviewOne(){
+        Review reviewOne = new Review(1l, "title", "image-url", "review_category",
+                "description", "content", "dateOfReview", "sources");
+        ReviewRepository underTest = new ReviewRepository (reviewOne);
+        //findOne method
+        Review foundReview = underTest.findOne(1l);
+        //matches foundReview with review One id
+        assertEquals (foundReview, reviewOne);
 
-    @Test
-    public void shouldFindReviewOneAndReviewTwp() {
-        underTest = new ReviewRepository(reviewOne, reviewTwo);
-        Collection<Review> foundReviews = underTest.findAll();
-        assertThat(foundReviews).contains(reviewOne, reviewTwo);
     }
-
 }
